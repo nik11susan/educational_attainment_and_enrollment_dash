@@ -4,6 +4,7 @@ import altair as alt
 
 literacy_data = pd.read_csv("../data/processed_data.csv")
 app = dash.Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+server = app.server
 
 chart = alt.Chart(literacy_data).mark_line().encode(
     x='attained_grade',
