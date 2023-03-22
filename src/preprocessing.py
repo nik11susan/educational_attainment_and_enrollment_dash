@@ -1,6 +1,9 @@
 import pandas as pd
 import os
 df = pd.read_excel("../data/raw_data.xlsx", sheet_name = "data")
+countries = df["country"].unique()
+chosen_countries = df["country"].unique()[:10]
+df = df[df["country"].isin(chosen_countries)]
 #allowed_col = ["country","year","aAll_9","aUrban_9","aRural_9","aMale_9","aFemale_9","aMalUrb_9","aMalRur_9","aFemUrb_9","aFemRur_9","aQuint1_9","aQuint2_9","aQuint3_9","aQuint4_9","aQuint5_9","aQuint1M_9","aQuint2M_9","aQuint3M_9","aQuint4M_9","aQuint5M_9","aQuint1F_9","aQuint2F_9","aQuint3F_9","aQuint4F_9","aQuint5F_9"]
 allowed_col = ["country", "year"]
 for i in df.columns:
