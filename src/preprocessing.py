@@ -36,8 +36,13 @@ for i in new_df.columns:
 new_df.columns = rename_col
 new_df = new_df.reset_index()
 new_df = pd.wide_to_long(new_df, age_group_col, i = ["country", "attained_grade"], j='age_group', sep='_', suffix = r'\w+')
+new_df = new_df.reset_index()
+new_df = pd.melt(new_df, 
+        id_vars = ["country", "attained_grade", "age_group", "adminregion", "year", "adminregionname"], 
+        value_name = "literacy_rate",
+        var_name = "category")
 output_file = "../data/processed_data.csv"
 if os.path.exists(output_file):
     os.remove(output_file)
-new_df.to_csv("../data/processed_data.csv")
+new_df.to_csv("../data/processed_data.csv", index=False)
 
