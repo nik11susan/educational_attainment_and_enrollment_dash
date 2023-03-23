@@ -24,6 +24,7 @@ Annie is an enthusiastic intern working at the United Nations Academic Impact (U
 - Bulgaria
 - Burkin a Faso
 - Burundi
+
 They want to compare the literacy rate of each of these countries with respect to the age group and gender. Annie has been tasked to find out more about education levels achieved and has to present this to the team through a compact presentation so that they can make decisions accordingly and work towards bridging the gap of literacy rate between developing and developed countries.
 
 ### Usage
