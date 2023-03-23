@@ -35,12 +35,12 @@ With the Education and Enrollment Dashboard, we can how the proportion of indivi
 ## Section 2: Description of the data
 
 We will visualize the dataset provided by [The World Bank](https://datacatalog.worldbank.org/search/dataset/0038973/Education-Attainment-and-Enrollment-around-the-World). The original dataset contained multiple columns with different indicators but after preprocessing this data, we have a dataframe with eight columns - `country`, `attained_grade`, `age_group`, `adminregion`, `year`, `adminregionname`, `category`, `literacy_rate`.
-`country` - contains a unique list of 10 countries
-`attained_grade` - provides the grade cleared by individuals (ranges from 1 to 9)
-`age_group` - provides the age group of the individuals (has four values in total - `15to19`, `20to29`, `30to39`, `40to49`)
-`adminregion` - administrative region code
-`year` - year when the data was collected
-`adminregionname` - administrative region name
+- `country` - contains a unique list of 10 countries
+- `attained_grade` - provides the grade cleared by individuals (ranges from 1 to 9)
+- `age_group` - provides the age group of the individuals (has four values in total - `15to19`, `20to29`, `30to39`, `40to49`)
+- `adminregion` - administrative region code
+- `year` - year when the data was collected
+- `adminregionname` - administrative region name
 
 ## Section 3: Research questions and usage scenarios
 
